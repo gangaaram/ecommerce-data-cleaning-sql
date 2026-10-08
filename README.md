@@ -1,5 +1,5 @@
 # Cleaning 1M+ Rows of UK E-Commerce Transactions with MySQL
-A SQL data-cleaning project on the **Online Retail II** dataset (1,067,371 transactions from a UK-based online gift retailer, 2009-2011). The goal is a clean, analysis-ready table for **transaction-level analysis**, built with a single reproducible MySQL script.
+A SQL data-cleaning project on the **Online Retail II** dataset (1,067,371 transactions from a UK-based online gift retailer, 2009-2011). The goal is a clean, analysis-ready table for **transaction-level analysis**, built with 2 reproducible MySQL scripts.
 
 ## Highlights
 - Cleaned **1,067,371 rows** across 8 columns.
@@ -172,6 +172,10 @@ SELECT DISTINCT invoice_no, stock_code, description, quantity,
 		 OR (LENGTH(stock_code)>5 AND (stock_code REGEXP '^[0-9]{5}[A-Z]{1,2}$' 
          OR stock_code LIKE 'DCGS%' OR stock_code LIKE 'SP%'))));
 ```
+
+## Metrics
+For each data quality measure, there are metrics to be checked against for future reference. Refer to [`Query/Clean Table Check.sql`](./Queries/Clean%20Table%20Check.sql). These metrics allow users to check if data quality has improved over time.
+
 ## Challenges
 
 - **Import problems:** the first import loaded only about 31k of 1M+ rows. Fixed by loading everything into an all-text table first, then converting types in SQL, where failures are visible instead of silently skipped.
