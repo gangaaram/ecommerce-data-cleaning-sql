@@ -1,5 +1,5 @@
 # Cleaning 1M+ Rows of UK E-Commerce Transactions with MySQL
-A SQL data-cleaning project on the **Online Retail II** dataset (1,067,371 transactions from a UK-based online gift retailer, 2009-2011). The goal is a clean, analysis-ready table for **transaction-level analysis**, built with 2 reproducible MySQL scripts.
+A SQL data-cleaning project on the **Online Retail II** dataset (1,067,371 transactions from a UK-based online gift retailer, 2009-2011). The goal is a clean, analysis-ready table for **transaction-level analysis**, built with a single reproducible MySQL script.
 
 ## Highlights
 - Cleaned **1,067,371 rows** across 8 columns.
