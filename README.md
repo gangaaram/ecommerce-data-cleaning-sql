@@ -34,7 +34,7 @@ A SQL data-cleaning project on the **Online Retail II** dataset (1,067,371 trans
 | `customer_id` | 5-digit customer ID (missing for guest checkouts) |
 | `country` | Customer's country |
 
-> The raw CSV is not included in this repo. See [`data/README.md`](data/README.md) for download instructions.
+> The raw CSV is not included in this repo. See [`instructions.md`](instructions.md) for download instructions.
 
 Data quality findings before cleaning: 
 | Issue | Count | % of rows |
@@ -50,7 +50,7 @@ Data quality findings before cleaning:
 
 ## Methodology
 
-The cleaning follows four data quality dimensions. The full exploration, with comments, is in [`Queries/Main Online Retail Cleaning 2.sql`](Queries/Main Online Retail Cleaning 2.sql). A total of 3 tables are used for this cleaning. The raw excel file which contains 2 sheets is combined and converted into a CSV through Python. Refer to code in [`Excel to CSV Online_Retail_II.ipnyb`](Excel to CSV Online_Retail_II.ipnyb). First the data is loaded into `online_retail_II_raw` to store the raw data. The data is then inserted into `online_retail_staging` and when cleaning is done, the final table is called `online_retail_clean`.
+The cleaning follows four data quality dimensions. The full exploration, with comments, is in [`Main Online Retail Cleaning 2.sql`](./Queries/Main%20Cleaning%20Online%20Retail%202.sql). A total of 3 tables are used for this cleaning. The raw excel file which contains 2 sheets is combined and converted into a CSV through Python. Refer to code in [`Excel to CSV Online_Retail_II.ipnyb`](Excel to CSV Online_Retail_II.ipnyb). First the data is loaded into `online_retail_II_raw` to store the raw data. The data is then inserted into `online_retail_staging` and when cleaning is done, the final table is called `online_retail_clean`.
 
 ### 1. Whitespace
 
