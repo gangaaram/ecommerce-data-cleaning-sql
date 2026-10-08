@@ -11,7 +11,7 @@ Unzip it and place `online_retail_II.xlsx` in working path. The workbook has two
 
 ## 2. Convert to CSV with Python (Pandas)
 
-Refer to [`Excel to CSV Online_Retail_II.ipynb`](./Excel%20to%20Online_Retail_II.ipynb). Replace path with your working path.
+Refer to [`Excel to CSV Online_Retail_II.ipynb`](./Excel%20to%20CSV%20Online_Retail_II.ipynb). Replace path with your working path.
 
 
 ## 3. Continue in SQL
